@@ -1,12 +1,7 @@
 package com.loans.Domain;
 
 
-
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText;
-
 import javax.persistence.*;
-import javax.xml.bind.annotation.*;
 
 
 /**
@@ -21,7 +16,7 @@ public class Loan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    @Column(name="Id")
+    @Column(name = "Id")
     int id;
 
 
@@ -32,11 +27,14 @@ public class Loan {
     @Column(name = "Month_Terms")
     double loanTermsMonths;
 
-    public Loan(){};
+    public Loan() {
+    }
+
+    ;
 
     public Loan(int loanAmount, int loanTermsMonths) {
-        this.loanAmount=loanAmount;
-        this.loanTermsMonths=loanTermsMonths;
+        this.loanAmount = loanAmount;
+        this.loanTermsMonths = loanTermsMonths;
     }
 
     public int getId() {
