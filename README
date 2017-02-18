@@ -1,0 +1,12 @@
+Simple application created on mysql database.
+To save yours time i used springboot and free online database,
+so everything is ready to test ;)
+To fast test i prefer to use REST Client.
+Project created in intelij.
+All of configuration informations are in application.properties and configuration folder.
+Secure password to Intelij database viewier = 12345
+For this project i use jackson dependency for json and xml.
+In real project i prefer JAXB to xml.
+
+
+Best regards :)
