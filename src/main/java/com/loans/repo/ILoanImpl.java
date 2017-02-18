@@ -25,7 +25,6 @@ public class ILoanImpl implements ILoan {
     @Override
     public Loan editLoan(Loan loan) {
         entityManager.merge(loan);
-
         return loan;
     }
 
